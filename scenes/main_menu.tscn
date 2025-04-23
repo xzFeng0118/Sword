@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6awd8s27f18j"]
+
+[ext_resource type="Texture2D" uid="uid://cw1i4ef7vx75u" path="res://assets/背景.png" id="1_mbhw2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n52hk"]
+
+[node name="Main_menu" type="Control"]
+layout_mode = 3
+anchor_top = 0.062
+anchor_right = 1.554
+anchor_bottom = 1.577
+offset_top = -40.176
+offset_right = -0.208008
+offset_bottom = 0.104004
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 618.0
+offset_bottom = 400.0
+texture = ExtResource("1_mbhw2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="Seperator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 880
+text = "浮生修行录
+"
+label_settings = SubResource("LabelSettings_n52hk")
+horizontal_alignment = 1
+vertical_alignment = 1

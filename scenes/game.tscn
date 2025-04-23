@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cipanbyjp2fkm"]
 
 [ext_resource type="PackedScene" uid="uid://dsme1hb6g0lqa" path="res://scenes/Player.tscn" id="1_oc4lq"]
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_rjxxk"]
 [ext_resource type="Texture2D" uid="uid://ds0lf302cf8bg" path="res://assets/sprites/world_tileset.png" id="2_nduhw"]
+[ext_resource type="PackedScene" uid="uid://bgxfbo5pwxkj1" path="res://scenes/coin.tscn" id="4_vk11m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1me3e"]
 texture = ExtResource("2_nduhw")
@@ -141,10 +141,9 @@ sources/1 = SubResource("TileSetAtlasSource_1me3e")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("1_rjxxk")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(0, -1)
+position = Vector2(0, -2)
 tile_set = SubResource("TileSet_024bp")
 format = 2
 layer_0/name = "Background"
@@ -159,3 +158,6 @@ zoom = Vector2(4, 4)
 limit_bottom = 100
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Coin" parent="." instance=ExtResource("4_vk11m")]
+position = Vector2(-88, 40)

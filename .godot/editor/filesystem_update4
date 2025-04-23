@@ -1,0 +1,8 @@
+res://scenes/inventory.tscn
+res://scripts/inventory.gd
+res://scenes/coin.tscn
+res://scripts/coin.gd
+res://scenes/game.tscn
+res://scenes/Player.tscn
+res://scripts/game_manager.gd
+res://scenes/main_menu.tscn
