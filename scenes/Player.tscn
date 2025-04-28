@@ -1,8 +1,7 @@
-[gd_scene load_steps=27 format=3 uid="uid://dsme1hb6g0lqa"]
+[gd_scene load_steps=26 format=3 uid="uid://dsme1hb6g0lqa"]
 
 [ext_resource type="Texture2D" uid="uid://bfnxqsofksrjt" path="res://assets/sprites/knight.png" id="1_62yhq"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_sny8h"]
-[ext_resource type="PackedScene" uid="uid://bqg1n85vk1sng" path="res://scenes/inventory.tscn" id="3_4knoc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yscqn"]
 atlas = ExtResource("1_62yhq")
@@ -187,5 +186,3 @@ frame_progress = 0.217003
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_hy4f5")
-
-[node name="Inventory" parent="." instance=ExtResource("3_4knoc")]

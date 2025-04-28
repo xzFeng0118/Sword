@@ -1,6 +1,12 @@
+Options
+Button
+MenuButton
+VideoStreamPlayer
+Panel
 Label
-Control
 VBoxContainer
 MarginContainer
+Camera2D
+HBoxContainer
+Control
 TextureRect
-Panel
